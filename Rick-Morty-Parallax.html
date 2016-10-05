@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Rick and Morty Countdown Site</title>
+		<link rel="stylesheet" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+		<style type="text/css">
+			body, html{
+				height: 100%;
+			}
+			
+		/*--Create the parallax scrolling effect--*/
+		/*----------------------------------------*/
+			.parallax{
+				height: 100%;
+				background-image: url("image/back1-nobottom.png");
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			
+		/*--Set the IDs for each background image--*/
+		/*-----------------------------------------*/
+			#back-image2{
+				background-image: url("image/back2-2.jpg");
+			}
+			#back-image3{
+				background-image: url("image/back3.jpg");
+			}
+			#back-image4{
+				background-image: url("image/sunset.jpg");
+			}
+			
+	    /*-- Create the fixed logo in the top left --*/
+		/*-------------------------------------------*/
+			#logo{
+				position: fixed;
+				top: 40px;
+				left: 40px;
+				width: 300px;
+				height: 100px;
+				z-index: 100; /* keeps the logo in the foreground */
+			}
+			
+		/*--style for the floating sun--*/
+		/*------------------------------*/
+			#sun{
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				height: 120px;
+				width: 120px;
+				z-index: 100;
+			}
+			
+		/*--style for the text paragraph--*/
+		/*--------------------------------*/
+			#text-box{
+				position: absolute;
+				top: 40px;
+				left: 410px;
+				width: 450px;
+				z-index: 0;
+				font-family: 'Gloria Hallelujah', cursive;
+				font-size: 15px;
+				background-color: #FFF;
+				border-radius: 10px;
+				border: 1px solid #000;
+				box-shadow: 10px 10px 5px rgba(55, 27, 15, 0.8);
+				padding: 30px;
+			}
+			
+		/*-- Create the speech bubble --*/
+		/*------------------------------*/
+			#bubble{
+				width: 60%;
+				height: 500px;
+				position: absolute;
+				top: 10px;
+				left: 400px;
+			}
+			
+		/*-- Wanted poster style and position--*/
+		/*-----------------------------------*/
+			#wanted-poster{
+				width: 220px;
+				height: 220px;
+				position: absolute;
+				top: 790px;
+				left: 40px;
+				border-radius: 10px;
+				box-shadow: 10px 10px 5px rgba(55, 27, 15, 0.8);
+			}
+			
+		/*-- Position and sizing for bottom piece on page one and page two --*/
+		/*-------------------------------------------------------------------*/
+			#bottom-piece1{
+				position: absolute;
+				top: -20px;
+				left: 0px;
+				width: 100%;
+				z-index: 50;
+			}
+			#bottom-piece2{
+				position: absolute;
+				top: 610px;
+				left: 0px;
+				width: 100%;
+				z-index: 50;
+			}
+			
+		/*-- Styling for text box PAGE TWO --*/
+		/*-----------------------------------*/
+			#text-box2{
+				position: absolute;
+				top: 640px;
+				right: 100px;
+				width: 200px;
+				z-index: 0;
+				font-family: 'Gloria Hallelujah', cursive;
+				font-size: 24px;
+				background-color: #FFF;
+				border-radius: 10px;
+				border: 1px solid #000;
+				box-shadow: 10px 10px 5px rgba(55, 27, 15, 0.8);
+				padding: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		
+	<!-- Sets the background images       -->
+	<!-------------------------------------->
+		<div class="parallax"></div>
+		<div class="parallax" id="back-image2"></div>
+		<div class="parallax" id="back-image3"></div> 
+<!--TESTING POSSIBLE ADDITIONAL IMAGE--<div class="parallax" id="back-image4"></div>-->
+		
+	<!-- Sets the fixed logo in the upper left hand corner -->
+	<!------------------------------------------------------->	
+		<img src="image/logo1.png" alt="rick and morty logo" id="logo">
+		
+<!--PAGE ONE-->	
+<!--TESTING ALTERNATIVE--   Sets the speech bubble --> 
+<!--TESTING ALTERNATIVE--   <img src="image/bubble4.png" alt="speech bubble" id="bubble">-->
+		
+	<!-- Sets up the sun in the top right -->
+	<!-------------------------------------->
+		<img src="image/sun.png" alt="sun" id="sun">
+		
+	<!-- Sets the text that sits on top of the speech bubble -->
+	<!--------------------------------------------------------->
+		<p id="text-box">
+			Welcome to "Rick and Morty and their adventures, Morty... 
+			Rick and Morty forever and forever. A hundred years, Rick and Morty... 
+			Me and Rick and Morty runnin' around, and... Rick and Morty time... All day 
+			long forever... All a hundred days. Rick and Morty forever a hundred times... 
+			Over and over, rick and morty adventures dot com.... www dot rick and morty dot com. 
+			www dot rick and morty adventures... All hundred years every minute, rick and morty 
+			dot com. www dot one hundred times rick and morty dot com."
+		</p>
+		
+	
+		
+	<!-- Sets the brown border at the bottom of page one -->
+	<!----------------------------------------------------->
+		<img src="image/bottompiece.png" alt="" id="bottom-piece1">
+	
+<!--PAGE TWO-->
+	<!-- Sets the wanted picture -->
+	<!------------------------->
+		<img src="image/wanted.jpg" alt="Wanted Poster" id="wanted-poster">
+		
+	<!-- Sets  the text-box2 -->
+	<!------------------------->
+		<p id="text-box2">
+			Tune in for Season Three.....
+		</p>
+		
+	<!-- Sets the border at the bottom of page two -->
+	<!----------------------------------------------->
+		<img src="image/bottompiece2.png" alt=" " id="bottom-piece2">
+	</body>
+</html>
